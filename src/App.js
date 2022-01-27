@@ -1,18 +1,13 @@
-import ApolloClient from "apollo-boost";
-import { ApolloProvider } from "react-apollo";
 import { Component } from "react";
 import Main from "./components/Main";
-
-const client = new ApolloClient({
-  uri: "http://localhost:4000/",
-});
+import data from "./data";
 
 class App extends Component {
   render() {
     return (
-      <ApolloProvider client={client}>
-        <Main />
-      </ApolloProvider>
+
+        <Main data={data}/>
+
     );
   }
 }
