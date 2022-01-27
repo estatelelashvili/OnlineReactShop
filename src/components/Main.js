@@ -1,8 +1,7 @@
 import React, { Component, Fragment } from "react";
 import Header from "./Header/Header";
-import { Query } from "react-apollo";
 import ProductsView from "./Product/ProductsView";
-import GET_PRODUCTS from "./ApolloQuery";
+
 
 class Main extends Component {
   constructor(props) {
@@ -138,17 +137,10 @@ class Main extends Component {
     //     this.state.currencySymbol = "$";
     // }
 
-    return (
-      <Fragment>
-        <Query query={GET_PRODUCTS}>
-          {({ loading, error, data }) => {
-            if (loading) return <h4>Loading...</h4>;
-            if (error) console.log(error);
-
             return (
               <Fragment>
                 <Header
-                  data={data}
+                   data={this.props.data}
                   MyBag={this.state.MyBag}
                   handlePickCategory={(e) => this.handlePickCategory(e)}
                   onAdd={this.handleAddItem}
@@ -162,7 +154,7 @@ class Main extends Component {
                 />
                 <div className="categoryName">{this.state.categoryName}</div>
                 <ProductsView
-                  data={data}
+                  data={this.props.data}
                   categoryName={this.state.categoryName}
                   MyBag={this.state.MyBag}
                   onAdd={this.handleAddItem}
@@ -175,10 +167,6 @@ class Main extends Component {
                   HandleProps={this.HandleProps}
                 />
               </Fragment>
-            );
-          }}
-        </Query>
-      </Fragment>
     );
   }
 }
