@@ -3,7 +3,7 @@ import "./Header.css";
 
 class CategoryButtons extends Component {
   render() {
-    return this.props.data.categories.map(({ name, products }) => (
+    return this.props.data.map(({ name, products }) => (
       <Fragment key={name}>
         <ol>
           <li>
