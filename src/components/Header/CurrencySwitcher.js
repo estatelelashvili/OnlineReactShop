@@ -17,7 +17,7 @@ class CurrencySwitcher extends Component {
   };
 
   render() {
-    const [[firstArr]] = this.props.data.categories.map(({ name, products }) =>
+    const [[firstArr]] = this.props.data.map(({ name, products }) =>
       products.map((product) =>
         product.prices.map((price) => {
           return price;
