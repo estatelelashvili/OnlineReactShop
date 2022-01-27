@@ -33,7 +33,7 @@ export class CategoryView extends Component {
   }
 
   render() {
-    const [firstArr, secondArr] = this.props.data.categories.map(
+    const [firstArr, secondArr] = this.props.data.map(
       ({ name, products }) =>
         products.map((product) => {
           return product;
