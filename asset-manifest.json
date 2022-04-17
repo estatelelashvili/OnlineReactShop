@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/reactive-shop/static/css/main.7a35e4a6.css",
+    "main.js": "/reactive-shop/static/js/main.e7a82731.js",
+    "static/media/cart.png": "/reactive-shop/static/media/cart.d4dd65cc62d57241db2d.png",
+    "static/media/cartBuy.png": "/reactive-shop/static/media/cartBuy.ea92074122464c217cc3.png",
+    "index.html": "/reactive-shop/index.html",
+    "main.7a35e4a6.css.map": "/reactive-shop/static/css/main.7a35e4a6.css.map",
+    "main.e7a82731.js.map": "/reactive-shop/static/js/main.e7a82731.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7a35e4a6.css",
+    "static/js/main.e7a82731.js"
+  ]
+}
